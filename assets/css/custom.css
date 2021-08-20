@@ -1,0 +1,197 @@
+:root{
+    --main-color: ;
+    --primary-color: #9D2065 ;
+    --bg-color: rgb(245, 245, 245);
+    --font-color: rgb(128, 128, 128);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+.secondary-font-color{
+    color: var(--font-color);
+}
+
+.primary-font-color{
+    color: var(--primary-color);
+}
+
+.card{
+    border: 0px !important;
+    border-radius: 5px;
+}
+
+.nav-search{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: var(--primary-color);
+}
+
+.card.electronics-list{
+    height: 330px !important;
+    display: flex;
+    margin-top: 10px;
+    /* border-radius: 7px; */
+}
+
+.card-footer{
+    background-color: #fff !important;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto    ;
+}
+
+.section-two{
+    padding-top: 50px;
+}
+
+.margin-extended{
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.custom-radius{
+    border-radius: 18px;
+}
+
+.letter-space{
+    letter-spacing: 2px;
+}
+
+.sect-two{
+    height: 250px !important;
+}
+
+.sect-card-one{
+    background-image: linear-gradient(to right, #9D2065, #670cce);
+    color: #fff;
+}
+.sect-card-two{
+    background-color: rgba(0, 0, 255, 0.76);
+}
+
+.sect-three{
+    padding-top: 40px;
+}
+
+.sect-three-products{
+    
+    padding-top: 10px !important;
+    /* border-radius: 7px; */
+    /* height: 350px !important; */
+}
+
+.sect-three-card{
+    font-size: small;
+    color: var(--font-color);
+}
+
+.custom-btn-primary-outline{
+    width: 100%;  
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.custom-btn-primary-outline:hover{
+    background-color: var(--primary-color); 
+    border: none;
+}
+
+.sect-four{
+    padding-top: 40px;
+}
+
+.sect-five{
+    padding-top: 40px;
+    
+}
+
+.sect-five-card-one{
+    height: 277px;
+    background-color: #6621b4;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #9D2065, #670cce);
+}
+
+.sect-five-card-two{
+    height: 131px;
+    background-color: rgb(206, 10, 10);
+    color: #fff;
+}
+
+.sect-five-card-three{
+    height: 131px;
+    background-color: #6E29BD;
+    color: #fff;
+}
+
+.sect-five-card-four{
+    height: 131px;
+    background-image: linear-gradient(to bottom right, #9D2065, rgb(206, 10, 10));
+    color: #fff;
+}
+
+.sect-five-card-five{
+    height: 131px;
+    background-color: #6E29BD;
+    color: #fff;
+}
+
+.sect-six{
+    padding-top: 40px;
+}
+
+.sect-six-card-one {
+    height: 450px;
+    background-image: linear-gradient(to left, #670cce, #9D2065);
+}
+
+.sect-seven{
+    padding-top: 60px;
+}
+
+#sect-seven-icons{
+    font-size: 35px;
+    color: var(--primary-color);
+}
+
+
+footer{
+    padding-top: 200px;
+}
+
+.footer-card{
+    border-radius: 0px;
+}
+.list-group>a{
+    color: var(--font-color);
+}
+
+.list-group>a:hover{
+    color: var(--primary-color);
+}
+
+
+
