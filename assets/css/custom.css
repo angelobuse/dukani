@@ -23,6 +23,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 a:hover{
     color: var(--primary-color);
 }
@@ -33,6 +38,28 @@ a:hover{
 
 .primary-font-color{
     color: var(--primary-color);
+}
+
+.logo{
+    width:calc(20vw + 15px);
+    height:calc(4vw + 5px);
+}
+
+.top-search{
+    width: calc(3vw + 100px) ;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+.wrapper{
+    padding-top: 150px;
 }
 
 .card{
@@ -46,10 +73,94 @@ a:hover{
     background-color: var(--primary-color);
 }
 
+.cart{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border: 1px solid #9D2065;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cart:hover{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #9D2065;
+}
+/* 
+.cart-count{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #9D2065;
+    border-radius: 50%;
+    display: inline-block;
+    position:relative;
+
+}
+
+.cart-count::before{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #9D2065;
+    border-radius: 50%;
+    display: inline-block;
+    position:absolute;
+
+} */
+
+.circle-overlaping{
+    width: 57px;
+    height: 57px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #9D2065;
+    position:relative;
+  }
+  
+.circle-overlaping::before{
+    content: '4';
+    position: absolute;
+    top: 0;
+    left: 41px;
+    background-color: white;
+    border: 1px solid #9D2065;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    color: #9D2065;
+  }
+
+
+.cart-icon{
+    color: var(--primary-color);
+}
+
+.user-wrapper{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-wrapper img{
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+
 .card.electronics-list{
-    height: 330px !important;
+    height: calc(20vw + 70px )  !important;
     display: flex;
-    margin-top: 10px;
+    margin-top: 40px;
     /* border-radius: 7px; */
 }
 
@@ -57,11 +168,7 @@ a:hover{
     background-color: #fff !important;
 }
 
-img{
-    display: block;
-    max-width: 100%;
-    height: auto    ;
-}
+
 
 .section-two{
     padding-top: 50px;
@@ -77,11 +184,11 @@ img{
 }
 
 .letter-space{
-    letter-spacing: 2px;
+    letter-spacing: 0.12em;
 }
 
 .sect-two{
-    height: 250px !important;
+    height: calc(18.9vw + 1px)  !important;
 }
 
 .sect-card-one{
@@ -193,5 +300,22 @@ footer{
     color: var(--primary-color);
 }
 
+.play-station{
+    position: absolute;
+    margin-left:  calc(20vh + 40px) ;
+}
+
+.play-station-device{
+    width: 500px;
+    height: 220px;
+}
+
+.ps{
+    overflow: hidden;
+}
+
+.buse{
+    align-items: center;
+}
 
 

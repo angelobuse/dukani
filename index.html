@@ -12,29 +12,95 @@
 </head>
 <body>
     <div class="header">
-        <nav class="navbar navbar-light bg-light fixed-top">
-            <!-- Another variation with a button -->
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <div class="input-group-append">
-                    <button class="btn btn-secondary nav-search" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
+        <div class="navbar-expand-lg fixed-top" style="background-color: #fff;">
+            <div class="top-nav container">
+                <ul class="nav d-flex justify-content-between" style="padding-top: 20px;">
+                    <li class="nav-item">
+                        <div>
+                            <img class="logo" src="assets/images/dukaniLogo.png" alt="logo" srcset="">
+                        </div>               
+                    </li>
+                    <li class="nav-item">
+                        <div class="input-group">
+                            <input type="text" class="form-control" style="width: calc(20vw + 5rem);" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary nav-search" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="circle-overlaping" type="button">
+                            <i class="fa fa-shopping-cart cart-icon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <div class="user-wrapper">
+                            <img src="assets/images/user.png" style="width: 30px;height: 30px;" alt="logo" srcset="">
+                            <div class="dropdown">
+                                <span style="font-size: small;"><a href="" class="secondary-font-color">Sign In / Join</a></span>
+                                <br>
+                                <span class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"> My Account</span>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+            <hr class="secondary-font-color">
+            <div class="bottom-nav container">
+                <ul class="nav" style="padding-bottom: 15px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"><strong>All Category</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>Electronics</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>TV/Audio/Video</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>Gaming</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>Kitchen</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>Laundry</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><strong>Other</strong></a>
+                    </li>
+                    </ul>
+            </div>   
+        </div>  
     </div>
 
-    
     <div class="wrapper">
         <div class="container">
+            
+            <!--Slider-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="padding-top: 80px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img class="d-block w-100" src="assets/images/slider.png"></a> 
+                    </div>
+                </div>
+            </div>
+
+            <!--Products card-->
             <section>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="card electronics-list text-center">
-                            <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <img class="img-responsive" src="assets/images/img4.png" alt="" srcset="">
+                            <div class="card-body buse">
+                                    <div class="d-flex justify-content-center align-self-center">
+                                        <img class="img-responsive " src="assets/images/img4.png" style="align-items: center;" alt="" srcset="">
                                     </div>
                             </div>
                             <div class="card-footer">
@@ -46,7 +112,7 @@
                         <div class="card electronics-list text-center">
                             <div class="card-body">
                                     <div class="d-flex justify-content-center">
-                                        <img class="img-responsive" src="assets/images/img3.png" alt="" srcset="">
+                                        <img src="assets/images/img3.png" alt="" srcset="">
                                     </div>
                             </div>
                             <div class="card-footer">
@@ -58,7 +124,7 @@
                         <div class="card electronics-list text-center">
                             <div class="card-body">
                                     <div class="d-flex justify-content-center">
-                                        <img class="img-responsive" src="assets/images/img2.png" alt="" srcset="">
+                                        <img src="assets/images/img2.png" alt="" srcset="">
                                     </div>
                             </div>
                             <div class="card-footer">
@@ -71,7 +137,7 @@
                         <div class="card electronics-list text-center">
                             <div class="card-body">
                                     <div class="d-flex justify-content-center">
-                                        <img class="img-responsive" src="assets/images/img1.png" alt="" srcset="">
+                                        <img src="assets/images/stove.png" alt="" srcset="">
                                     </div>
                             </div>
                             <div class="card-footer">
@@ -136,50 +202,46 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card sect-two sect-card-one custom-radius">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12 margin-extended">
+                                            <h1><strong>LG 55''</strong> </h1>
+                                            <p class="letter-space"><strong>Smart TV UHD</strong></p>
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-12 margin-extended">
-                                                <h1><strong>LG 55''</strong> </h1>
-                                                <p class="letter-space" style="font-size: large;"><strong>Smart TV UHD</strong></p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 margin-extended">
-                                                    <h6 class="letter-space">Only for</h6>
-                                                    <h2 class="letter-space"><strong>2,300,000</strong></h2>
-                                                </div>
+                                                <h6 class="letter-space">Only for</h6>
+                                                <h2 class="letter-space"><strong>2,300,000</strong></h2>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6    ">
-    
-                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="assets/images/tv.png" style="width: 20.7rem; height: 14.82rem;padding-top: 10px;"  alt="" srcset="">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="card custom-radius sect-two sect-card-two">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="row">
+                                        <div class="col-md-12 margin-extended">
+                                            <h1><strong> </strong> </h1>
+                                            <p class="letter-space" style="font-size: large;"><strong></strong></p>
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-12 margin-extended">
-                                                <h1><strong> </strong> </h1>
-                                                <p class="letter-space" style="font-size: large;"><strong></strong></p>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-12 margin-extended">
-                                                    <h6 class="letter-space"> </h6>
-                                                    <h2 class="letter-space"><strong> </strong></h2>
-                                                </div>
+                                                <h6 class="letter-space"> </h6>
+                                                <h2 class="letter-space"><strong> </strong></h2>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-    
-                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <img src="assets/images/cont.png" style="width: 16.7rem; height: 15.82rem;padding-top: 12px;" alt="" srcset="">
                                 </div>
                             </div>
                         </div>
@@ -514,24 +576,24 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card sect-five-card-one custom-radius">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="row">
-                                            <div class="col-md-12 margin-extended">
-                                                <br>
-                                                <h4><strong>BEST DEAL</strong> </h4>
-                                                <h5>Playstation 5</h5>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 margin-extended">
-                                                <h5 class="letter-space"><strong>2,800,000</strong></h5>
-                                                <h5 style="text-decoration: line-through;">3,000,000</h5>
-                                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-md-12 margin-extended">
+                                            <br>
+                                            <h4><strong>BEST DEAL</strong> </h4>
+                                            <h5>Playstation 5</h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-4"></div>
+                                    <div class="row">
+                                        <div class="col-md-12 margin-extended">
+                                            <h5 class="letter-space"><strong>2,800,000</strong></h5>
+                                            <h5 style="text-decoration: line-through;">3,000,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 play-station">
+                                    <img src="assets/images/station.png" style="width: 40.7rem; height: 15.82rem;padding-top: 12px;" alt="" srcset="">
                                 </div>
                             </div>
                         </div>
@@ -539,13 +601,14 @@
                     <div class="col-md-4">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="card sect-five-card-two custom-radius">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-6 margin-extended">
-                                                <h5>All PS4 CDs</h5>
-                                                <h5><strong>Tsh 100,000</strong></h5>
-                                            </div>
+                                <div class="card sect-five-card-two custom-radius ">
+                                    <div class="row">
+                                        <div class="col-md-6 margin-extended" >
+                                            <h5 style="padding-top: 20px;">All PS4 CDs</h5>
+                                            <h5><strong>Tsh 100,000</strong></h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="assets/images/ps.png" style="width: 8.7rem; height: 7.92rem; padding-top:2px;" alt="" srcset="">
                                         </div>
                                     </div>
                                 </div>
@@ -554,16 +617,17 @@
                         <div class="row" style="padding-top: 15px;">
                             <div class="col-md-12">
                                 <div class="card sect-five-card-three custom-radius">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-4">
-    
-                                            </div>
-                                            <div class="col-md-8 margin-extended">
-                                                <h5>Bluetooth Headset</h5>
-                                                <h5><strong>Tsh 78,000</strong></h5>
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-4 margin-extended">
+                                            <img src="assets/images/head.png" style="width: 5.7rem; height: 5.82rem;" alt="" srcset="">
                                         </div>
+                                        <div class="col-md-8">
+                                            <h5 style="padding-top: 30px;">Bluetooth Headset</h5>
+                                            <h5><strong>Tsh 78,000</strong></h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        
                                     </div>
                                 </div> 
                             </div>
@@ -573,12 +637,13 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card sect-five-card-four custom-radius">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-8 margin-extended">
-                                                <h5>All PS4 CDs</h5>
-                                                <h5><strong>Tsh 100,000</strong></h5>
-                                            </div>
+                                    <div class="row">
+                                        <div class="col-md-6 margin-extended">
+                                            <h5 style="padding-top: 20px;">All PS4 CDs</h5>
+                                            <h5><strong>Tsh 100,000</strong></h5>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img src="assets/images/cont.png" style="width: 9.37rem; height: 8.12rem;" alt="" srcset="">
                                         </div>
                                     </div>
                                 </div>
@@ -681,7 +746,7 @@
                     <div class="row">
                         <div class="col-3">
                             <div class="footer-logo">
-                                <img src="assets/images/dukaniLogo.png" style="width: 153;height: 32;" alt="logo" srcset="">
+                                <img src="assets/images/dukaniLogo.png" style=" width:calc(20vw + 15px);height:calc(4vw + 5px);" alt="logo" srcset="">
                             </div>
                             <br>
                             <p class="secondary-font-color">You might remember the Dell computer
